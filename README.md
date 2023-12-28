@@ -2,6 +2,10 @@
 
 PTX SnowfallView is a graphical library for creating a snowfall effect in B4A applications. It provides various customization options to enhance the visual experience.
 
+## Demo new
+
+<img src="https://github.com/PuzzleTakX/SnowfallView/blob/main/demo/demo.gif?raw=true" alt="image_demo" width="300" height="700">
+
 ## Getting Started
 
 1. Initialize the PTX SnowfallView in your B4A code.
