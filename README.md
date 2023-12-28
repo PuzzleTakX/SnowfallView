@@ -33,8 +33,6 @@ PTX SnowfallView is a graphical library for creating a snowfall effect in B4A ap
 
 ## Options
 
-## Options
-
 ### Color
 Set the color of the snowfall.
 
