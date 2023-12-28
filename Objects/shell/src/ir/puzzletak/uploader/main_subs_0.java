@@ -10,6 +10,7 @@ public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exc
 try {
 		Debug.PushSubsStack("Activity_Create (main) ","main",0,main.mostCurrent.activityBA,main.mostCurrent,25);
 if (RapidSub.canDelegate("activity_create")) { return ir.puzzletak.uploader.main.remoteMe.runUserSub(false, "main","activity_create", _firsttime);}
+RemoteObject _pta = RemoteObject.declareNull("ir.puzzletak.snowfall.SnowfallWrapper");
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 25;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
 Debug.ShouldStop(16777216);
@@ -19,42 +20,45 @@ main.mostCurrent._utils.runVoidMethod ("_setstatusbarcolor" /*RemoteObject*/ ,ma
  BA.debugLineNum = 27;BA.debugLine="Activity.Color = Colors.Gray";
 Debug.ShouldStop(67108864);
 main.mostCurrent._activity.runVoidMethod ("setColor",main.mostCurrent.__c.getField(false,"Colors").getField(true,"Gray"));
+ BA.debugLineNum = 29;BA.debugLine="Dim pta As PTX_SnowfallView";
+Debug.ShouldStop(268435456);
+_pta = RemoteObject.createNew ("ir.puzzletak.snowfall.SnowfallWrapper");Debug.locals.put("pta", _pta);
  BA.debugLineNum = 30;BA.debugLine="pta.Initialize(\"\")";
 Debug.ShouldStop(536870912);
-main.mostCurrent._pta.runVoidMethod ("Initialize",main.processBA,(Object)(RemoteObject.createImmutable("")));
+_pta.runVoidMethod ("Initialize",main.processBA,(Object)(RemoteObject.createImmutable("")));
  BA.debugLineNum = 31;BA.debugLine="Activity.AddView(pta,0%x,0%x,100%x,100%y)";
 Debug.ShouldStop(1073741824);
-main.mostCurrent._activity.runVoidMethod ("AddView",(Object)((main.mostCurrent._pta.getObject())),(Object)(main.mostCurrent.__c.runMethod(true,"PerXToCurrent",(Object)(BA.numberCast(float.class, 0)),main.mostCurrent.activityBA)),(Object)(main.mostCurrent.__c.runMethod(true,"PerXToCurrent",(Object)(BA.numberCast(float.class, 0)),main.mostCurrent.activityBA)),(Object)(main.mostCurrent.__c.runMethod(true,"PerXToCurrent",(Object)(BA.numberCast(float.class, 100)),main.mostCurrent.activityBA)),(Object)(main.mostCurrent.__c.runMethod(true,"PerYToCurrent",(Object)(BA.numberCast(float.class, 100)),main.mostCurrent.activityBA)));
+main.mostCurrent._activity.runVoidMethod ("AddView",(Object)((_pta.getObject())),(Object)(main.mostCurrent.__c.runMethod(true,"PerXToCurrent",(Object)(BA.numberCast(float.class, 0)),main.mostCurrent.activityBA)),(Object)(main.mostCurrent.__c.runMethod(true,"PerXToCurrent",(Object)(BA.numberCast(float.class, 0)),main.mostCurrent.activityBA)),(Object)(main.mostCurrent.__c.runMethod(true,"PerXToCurrent",(Object)(BA.numberCast(float.class, 100)),main.mostCurrent.activityBA)),(Object)(main.mostCurrent.__c.runMethod(true,"PerYToCurrent",(Object)(BA.numberCast(float.class, 100)),main.mostCurrent.activityBA)));
  BA.debugLineNum = 32;BA.debugLine="pta.Color = Colors.Black";
 Debug.ShouldStop(-2147483648);
-main.mostCurrent._pta.runVoidMethod ("setColor",main.mostCurrent.__c.getField(false,"Colors").getField(true,"Black"));
+_pta.runVoidMethod ("setColor",main.mostCurrent.__c.getField(false,"Colors").getField(true,"Black"));
  BA.debugLineNum = 34;BA.debugLine="pta.EnableAlphaFade = True";
 Debug.ShouldStop(2);
-main.mostCurrent._pta.runVoidMethod ("setEnableAlphaFade",main.mostCurrent.__c.getField(true,"True"));
+_pta.runVoidMethod ("setEnableAlphaFade",main.mostCurrent.__c.getField(true,"True"));
  BA.debugLineNum = 35;BA.debugLine="pta.EnableRandomCurving = True";
 Debug.ShouldStop(4);
-main.mostCurrent._pta.runVoidMethod ("setEnableRandomCurving",main.mostCurrent.__c.getField(true,"True"));
+_pta.runVoidMethod ("setEnableRandomCurving",main.mostCurrent.__c.getField(true,"True"));
  BA.debugLineNum = 37;BA.debugLine="pta.AnimateDuration = 10000";
 Debug.ShouldStop(16);
-main.mostCurrent._pta.runVoidMethod ("setAnimateDuration",BA.numberCast(int.class, 10000));
+_pta.runVoidMethod ("setAnimateDuration",BA.numberCast(int.class, 10000));
  BA.debugLineNum = 38;BA.debugLine="pta.GenerateSnowTiming = 45";
 Debug.ShouldStop(32);
-main.mostCurrent._pta.runVoidMethod ("setGenerateSnowTiming",BA.numberCast(int.class, 45));
+_pta.runVoidMethod ("setGenerateSnowTiming",BA.numberCast(int.class, 45));
  BA.debugLineNum = 39;BA.debugLine="pta.ImageBitmap = LoadBitmap(File.DirAssets,\"snow";
 Debug.ShouldStop(64);
-main.mostCurrent._pta.runVoidMethod ("setImageBitmap",(main.mostCurrent.__c.runMethod(false,"LoadBitmap",(Object)(main.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(RemoteObject.createImmutable("snow.png"))).getObject()));
+_pta.runVoidMethod ("setImageBitmap",(main.mostCurrent.__c.runMethod(false,"LoadBitmap",(Object)(main.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(RemoteObject.createImmutable("snow.png"))).getObject()));
  BA.debugLineNum = 40;BA.debugLine="pta.setRandomSnowSizeRange(25,1)";
 Debug.ShouldStop(128);
-main.mostCurrent._pta.runVoidMethod ("setRandomSnowSizeRange",(Object)(BA.numberCast(int.class, 25)),(Object)(BA.numberCast(int.class, 1)));
+_pta.runVoidMethod ("setRandomSnowSizeRange",(Object)(BA.numberCast(int.class, 25)),(Object)(BA.numberCast(int.class, 1)));
  BA.debugLineNum = 41;BA.debugLine="pta.setCurvingRandom(180,90)";
 Debug.ShouldStop(256);
-main.mostCurrent._pta.runVoidMethod ("setCurvingRandom",(Object)(BA.numberCast(int.class, 180)),(Object)(BA.numberCast(int.class, 90)));
+_pta.runVoidMethod ("setCurvingRandom",(Object)(BA.numberCast(int.class, 180)),(Object)(BA.numberCast(int.class, 90)));
  BA.debugLineNum = 42;BA.debugLine="pta.init";
 Debug.ShouldStop(512);
-main.mostCurrent._pta.runVoidMethod ("init");
+_pta.runVoidMethod ("init");
  BA.debugLineNum = 43;BA.debugLine="pta.startSnowing";
 Debug.ShouldStop(1024);
-main.mostCurrent._pta.runVoidMethod ("startSnowing");
+_pta.runVoidMethod ("startSnowing");
  BA.debugLineNum = 46;BA.debugLine="End Sub";
 Debug.ShouldStop(8192);
 return RemoteObject.createImmutable("");
@@ -100,8 +104,6 @@ finally {
 		}}
 public static RemoteObject  _globals() throws Exception{
  //BA.debugLineNum = 20;BA.debugLine="Sub Globals";
- //BA.debugLineNum = 22;BA.debugLine="Dim pta As PTX_SnowfallView";
-main.mostCurrent._pta = RemoteObject.createNew ("ir.puzzletak.snowfall.SnowfallWrapper");
  //BA.debugLineNum = 23;BA.debugLine="End Sub";
 return RemoteObject.createImmutable("");
 }

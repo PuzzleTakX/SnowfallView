@@ -46,14 +46,14 @@ End Sub
 
 Sub Globals
 
-	Dim pta As PTX_SnowfallView
+
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
 	Utils.SetStatusBarColor(Colors.White,Colors.White)
 	Activity.Color = Colors.Gray
 
-    
+	Dim pta As PTX_SnowfallView
 	pta.Initialize("")
 	Activity.AddView(pta,0%x,0%x,100%x,100%y)
 	pta.Color = Colors.Black

@@ -2,8 +2,8 @@ ir.puzzletak.uploader
 0
 0
 0
-main,activity_create,0,1,25,46
-,pta
+main,activity_create,0,0,25,46
+
 
 utils,setstatusbarcolor
 main,activity_pause,0,0,52,54

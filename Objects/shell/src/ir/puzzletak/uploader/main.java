@@ -55,10 +55,9 @@ public boolean isSingleton() {
 		return pcBA;
 	}
 public static RemoteObject __c = RemoteObject.declareNull("anywheresoftware.b4a.keywords.Common");
-public static RemoteObject _pta = RemoteObject.declareNull("ir.puzzletak.snowfall.SnowfallWrapper");
 public static ir.puzzletak.uploader.starter _starter = null;
 public static ir.puzzletak.uploader.utils _utils = null;
   public Object[] GetGlobals() {
-		return new Object[] {"Activity",main.mostCurrent._activity,"pta",main.mostCurrent._pta,"Starter",Debug.moduleToString(ir.puzzletak.uploader.starter.class),"Utils",Debug.moduleToString(ir.puzzletak.uploader.utils.class)};
+		return new Object[] {"Activity",main.mostCurrent._activity,"Starter",Debug.moduleToString(ir.puzzletak.uploader.starter.class),"Utils",Debug.moduleToString(ir.puzzletak.uploader.utils.class)};
 }
 }
